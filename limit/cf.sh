@@ -1,12 +1,19 @@
 #!/bin/bash
-MYIP=$(wget -qO- icanhazip.com);
+#random
 apt install jq curl -y
-#read -p "Masukan Domain (contoh : Dragon)" domen
-DOMAIN=sabdo.my.id
+rm -rf /root/xray/scdomain
+mkdir -p /root/xray
+clear
+echo ""
+echo ""
+echo ""
+
+read -rp "Input Domain Name. Example ( bebas ): " -e sub
+DOMAIN=premium7.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.sabdo.my.id
-CF_ID=fagalang45@gmail.com
-CF_KEY=8bd7364eeddb9bd7b9546b3ac7e5379a55f1b
+dns=${sub}.premium7.my.id
+CF_ID=jrmyahyo@gmail.cok
+CF_KEY=c11d90f1ca8cfe6ed953cfc52bfcdb40
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
