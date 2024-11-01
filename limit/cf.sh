@@ -12,7 +12,7 @@ read -rp "Input Domain Name. Example ( bebas ): " -e sub
 DOMAIN=premium7.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.premium7.my.id
-CF_ID=jrmyahyo@gmail.cok
+CF_ID=jrmyahyo@gmail.com
 CF_KEY=c11d90f1ca8cfe6ed953cfc52bfcdb40
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
